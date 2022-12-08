@@ -1,61 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <!-- icon cdn start -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- icon cdn end -->
-    <title>Document</title>
-  </head>
-  <body>
-    <nav>
-      <div class="nav_item">
-        <i class="fa-solid fa-bars"></i>
-        <img src="./assets/img/navicon.svg" alt="" />
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </div>
-    </nav>
-    <main>
-      <section class="home">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <!-- icon cdn start -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- icon cdn end -->
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- nav start -->
+  <nav>
+    <div class="nav_item">
+      <i class="fa-solid fa-bars"></i>
+      <img src="./assets/img/nav_footer_logo.svg" alt="" />
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+  </nav>
+  <!-- nav end -->
+  <!-- main start -->
+  <main>
+    <!-- Home section start -->
+    <section class="home">
+      <picture>
+        <source media="(max-width: 767px)" srcset="./assets/img/Cola_res.jpg" />
+        <img src="./assets/img/cocacola.jpg" alt="Cola" />
+      </picture>
+    </section>
+    <!-- home section end -->
+    <!-- card bir start -->
+    <section class="card_bir">
+      <div class="card_tek">
         <picture>
-          <source
-            media="(max-width: 767px)"
-            srcset="./assets/img/Cola_res.jpg"
-          />
-          <img src="./assets/img/cocacola.jpg" alt="Cola" />
+          <source media="(max-width: 767px)" srcset="./assets/img/card_tek_res.jpg" />
+          <img src="./assets/img/card_tek.jpg" alt="Cola" />
         </picture>
-      </section>
-      <section class="card_bir">
-        <div class="card_tek">
-          <img src="./assets/img/card_tek.jpg" alt="" />
-        </div>
-        <div class="card_cut">
+      </div>
+      <div class="card_cut">
+        <div class="cut_bir">
           <img src="./assets/img/media_homepage.jpg" alt="" />
+        </div>
+        <div class="cut_iki">
           <img src="./assets/img/bilirsinizmi_homepage.jpg" alt="" />
         </div>
-      </section>
-      <section class="card_iki">
-        <div class="haqqimizda">
-          <picture>
-            <source
-              media="(max-width: 767px)"
-              srcset="./assets/img/haqqimizda_res.jpg"
-            />
-            <img src="./assets/img/haqqimizda.jpg" alt="Cola" />
-          </picture>
-        </div>
-        <div class="yaxsidunya"></div>
-        <div class="elaqe"><img src="./assets/img/elaqe.jpg" alt=""></div>
-      </section>
-    </main>
-  </body>
+      </div>
+    </section>
+    <!-- card bir end -->
+    <!-- card iki start -->
+    <section class="card_iki">
+      <div class="haqqimizda">
+        <picture>
+          <source media="(max-width: 767px)" srcset="./assets/img/haqqimizda_res.jpg" />
+          <img src="./assets/img/haqqimizda.jpg" alt="Cola" />
+        </picture>
+      </div>
+      <div class="yaxsidunya">
+        <picture>
+          <source media="(max-width: 767px)" srcset="./assets/img/yaxsidunya_res.jpg" />
+          <img src="./assets/img/yaxsidunya.jpg" alt="Cola" />
+        </picture>
+      </div>
+      <div class="elaqe">
+        <picture>
+          <source media="(max-width: 767px)" srcset="./assets/img/elaqe_res.jpg" />
+          <img src="./assets/img/elaqe.jpg" alt="Cola" />
+        </picture>
+      </div>
+    </section>
+    <!-- card iki end -->
+    <section class="about">
+      <div class="about_item">
+        <ul>
+          <li>
+            <p>Bizi İzləyin</p>
+          </li>
+          <li>
+            <p>Brendlər</p>
+          </li>
+          <li>
+            <p>Digər ölkələri kəşf edin</p>
+          </li>
+        </ul>
+      </div>
+      <div class="hr">
+        <hr>
+      </div>
+      <div class="about_element">
+        <img src="./assets/img/Facebook_100x100.png" alt="">
+        <img src="./assets/img/Instagram_100x100.png" alt="">
+        <img src="./assets/img/YouTube_100x100.png" alt="">
+      </div>
+    </section>
+  </main>
+  <!-- main end -->
+  <!-- footer start -->
+  <footer>
+    <div class="footer_logo">
+      <img src="./assets/img/nav_footer_logo.svg" alt="" />
+    </div>
+    <div class="footer_content">
+      <div class="footer_content_text_left">
+        <ul>
+          <li><a href="https://www.coca-cola.az/privacy-policy">Məxfilik Siyasəti</a></li>
+          <p>|</p>
+          <li><a href="https://www.coca-cola.az/terms-of-use">İstifadə Qaydaları</a></li>
+        </ul>
+      </div>
+      <div class="footer_content_text_right">
+        <p>©2021 Coca-Cola şirkəti. Coca-Cola şirkətinin qeydə alınmış əmtəə nişanıdır.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+</body>
+
 </html>

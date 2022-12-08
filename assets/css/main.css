@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +9,18 @@
   text-decoration: none;
 }
 
+* Ul, li, a {
+  list-style: none;
+  text-decoration: none;
+}
+
+* p,
+ul,
+li,
+a {
+  font-family: "Ibarra Real Nova", serif;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -15,6 +28,8 @@ nav {
   width: 100%;
   height: 68px;
   background-color: black;
+  position: fixed;
+  z-index: 1;
 }
 nav .nav_item {
   width: 95%;
@@ -31,6 +46,56 @@ nav .nav_item i {
   color: white;
 }
 
+footer {
+  width: 100%;
+  background-color: black;
+}
+footer .footer_logo {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+footer .footer_logo img {
+  width: 276px;
+  height: 45px;
+  margin-top: 15px;
+}
+footer .footer_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+footer .footer_content .footer_content_text_left {
+  color: white;
+}
+footer .footer_content .footer_content_text_left ul {
+  display: flex;
+  gap: 10px;
+}
+footer .footer_content .footer_content_text_left ul li a {
+  font-size: 14px;
+  color: white;
+}
+footer .footer_content .footer_content_text_right {
+  text-align: center;
+}
+footer .footer_content .footer_content_text_right p {
+  color: white;
+  font-size: 15px;
+}
+
+@media only screen and (max-device-width: 767px) {
+  .footer_content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+main .home {
+  cursor: pointer;
+}
 main .home picture {
   display: flex;
 }
@@ -40,22 +105,51 @@ main .home picture img {
 main .card_bir {
   width: 100%;
   display: flex;
+  cursor: pointer;
 }
 main .card_bir .card_tek {
   width: 60%;
+  overflow: hidden;
 }
-main .card_bir .card_tek img {
+main .card_bir .card_tek picture img {
   width: 100%;
   height: 100%;
 }
+main .card_bir .card_tek picture img:hover {
+  transform: scale(1.2);
+  transition: 5s;
+}
 main .card_bir .card_cut {
   width: 40%;
-  display: flex;
   flex-direction: column;
 }
-main .card_bir .card_cut img {
+main .card_bir .card_cut .cut_bir {
+  display: flex;
+  overflow: hidden;
   width: 100%;
   height: 50%;
+}
+main .card_bir .card_cut .cut_bir img {
+  width: 100%;
+  height: 100%;
+}
+main .card_bir .card_cut .cut_bir img:hover {
+  transform: scale(1.2);
+  transition: 5s;
+}
+main .card_bir .card_cut .cut_iki {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
+}
+main .card_bir .card_cut .cut_iki img {
+  width: 100%;
+  height: 100%;
+}
+main .card_bir .card_cut .cut_iki img:hover {
+  transform: scale(1.2);
+  transition: 5s;
 }
 @media only screen and (max-device-width: 767px) {
   main .card_bir {
@@ -69,4 +163,73 @@ main .card_bir .card_cut img {
   main .card_bir .card_cut {
     width: 100%;
   }
+}
+main .card_iki {
+  width: 100%;
+  display: flex;
+}
+main .card_iki div {
+  width: 33.333333%;
+  cursor: pointer;
+  overflow: hidden;
+}
+main .card_iki div img {
+  width: 100%;
+  height: 100%;
+}
+main .card_iki div img:hover {
+  transform: scale(1.2);
+  transition: 5s;
+}
+@media only screen and (max-device-width: 767px) {
+  main .card_iki {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  main .card_iki div {
+    width: 100%;
+    display: flex;
+  }
+  main .card_iki div img {
+    width: 100%;
+  }
+}
+main .about {
+  padding-top: 100px;
+}
+main .about .about_item {
+  display: flex;
+  justify-content: center;
+  max-width: 50%;
+  margin: 0 auto;
+}
+main .about .about_item ul {
+  display: flex;
+  gap: 80px;
+}
+main .about .about_item ul li {
+  cursor: pointer;
+  text-align: center;
+  font-size: 21px;
+}
+main .about .about_item ul li p:hover {
+  color: red;
+}
+main .about .hr {
+  max-width: 70%;
+  margin: 0 auto;
+  padding-top: 7px;
+}
+main .about .about_element {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  gap: 20px;
+}
+main .about .about_element img {
+  width: 70px;
+  height: 70px;
 }/*# sourceMappingURL=main.css.map */
